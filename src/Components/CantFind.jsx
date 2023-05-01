@@ -10,7 +10,7 @@ export default function Error() {
             </div>
             <div className="errorstxt">La page que vous demandez n'existe pas.</div>
             <div className="hsh">
-                {/* Link redirige l'utilisateur vers la page d'accueil */}
+                {/* Link redirige vers la page d'accueil */}
                 <Link to="/">Retourner sur la page d’accueil</Link>
             </div>
         </div>
