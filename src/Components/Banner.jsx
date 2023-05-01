@@ -1,8 +1,7 @@
 import React from 'react';
 import '../Styles/Banner.css';
 
-// Composant Banner qui affiche une bannière avec une image
-// La source de l'image est passée via la props img
+// La source de l'image passe par la props 
 export default function Banner(props) {
     return (
         <>

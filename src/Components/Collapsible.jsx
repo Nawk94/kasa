@@ -15,7 +15,7 @@ export default function Collapsible(props) {
 
   return (
     <div className="collapsible">
-      {/* "toggle" indique si le contenu est ouvert ou fermé */}
+      {/* "toggle" indique si le contenu est ouvert ou fermée */}
       <div className="toggle" onClick={openCollapse}>
         <h2>{props.label}</h2>
         {!isOpen ? (

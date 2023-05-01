@@ -5,7 +5,7 @@ import Collapsible from "../Components/Collapsible";
 import '../Styles/About.css';
 
 export default function About() {
-    // Création d'un tableau pour stocker les informations à afficher dans les collapsibles
+    // Création d'un tableau pour stocker les informations à afficher dans les "collapsibles"
     const infos = [
         {
             label: "Fiabilité",
