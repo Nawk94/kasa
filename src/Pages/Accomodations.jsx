@@ -1,7 +1,7 @@
 import React from 'react';
 import accomodations from '../logements.json';
 import { useParams, useLoaderData } from 'react-router-dom';
-import Caroussel from '../Components/Caroussel';
+import Carousel from '../Components/Lecarousel';
 import Rating from '../Components/Rating';
 import Collapsible from '../Components/Collapsible';
 import '../Styles/Accomodation.css';
@@ -36,7 +36,7 @@ export default function Accomodation() {
         <>
             <div className="accomodation" key={accomodationInfos.id}>
                 {/* on affiche les images de l'hébergement */}
-                <Caroussel images={accomodationInfos.pictures} />
+                <Carousel images={accomodationInfos.pictures} />
 
                 {/* Les informations sur l'hébergement */}
                 <div className="infos">

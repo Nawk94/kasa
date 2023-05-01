@@ -4,11 +4,10 @@ import { NavLink } from 'react-router-dom';
 import '../Styles/Header.css';
 
 export default function Header() {
-    // Utilisation d'un composant fonctionnel pour le header, qui retourne le JSX à afficher
     return (
         <div className="header">
             <div className="logo">
-                {/* Affichage du logo en utilisant une balise <img> */}
+                {/* on affiche le logo */}
                 <img src={ logo } alt="logo Kasa" />
             </div>
             <nav>

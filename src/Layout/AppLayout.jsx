@@ -6,11 +6,11 @@ import '../Styles/Layout.css'
 const AppLayout = () => {
     return (
         <div className="container">
-            <Header /> {/* Composant pour l'en-tête */}
+            <Header /> 
             <main>
-                <Outlet /> {/* Emplacement réservé pour le contenu spécifique à chaque route */}
+                <Outlet /> {/* Emplacement pour le contenu spécifique de chaque route */}
             </main>
-            <Footer /> {/* Composant pour le pied de page */}
+            <Footer /> 
         </div>
     )       
 };

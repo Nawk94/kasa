@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import "../Styles/Caroussel.css";
+import "../Styles/Lecarousel.css";
 import arrow_left from "../assets/arrow_left.png";
 import arrow_right from "../assets/arrow_right.png";
 
-export default function Caroussel({ images }) {
+export default function Carousel({ images }) {
   // On Utilise le hook useState pour stocker l'index de l'image actuelle
   const [currImg, setCurrImg] = useState(0);
   
   //si la longueur du tableau est <= 1 les fleches ne sont pas affichées
   if (images.length <= 1) {
     return (
-      <div className="caroussel">
+      <div className="carousel">
         <div
-          className="carousselInner"
+          className="carouselInner"
           style={{ backgroundImage: `url(${images[0]})` }}
         ></div>
       </div>
@@ -42,9 +42,9 @@ export default function Caroussel({ images }) {
   };
 
   return (
-    <div className="caroussel">
+    <div className="carousel">
       <div
-        className="carousselInner"
+        className="carouselInner"
         style={{ backgroundImage: `url(${images[currImg]})` }}
       >
         <div className="left" onClick={handleLeftArrowClick}>

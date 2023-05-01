@@ -14,35 +14,35 @@ import NotFound from './Components/NotFound'; // import du composant NotFound
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <AppLayout />, // le layout de l'application
-    errorElement: <NotFound />, // le composant NotFound est utilisé si une erreur survient
-    children: [ // les routes enfants
+    element: <AppLayout />, 
+    errorElement: <NotFound />, // si une erreur survient
+    children: [ // les enfants
       {
         path: '/',
-        element: <Home />, // la page d'accueil
-        errorElement: <NotFound />, // le composant NotFound est utilisé si une erreur survient
-        loader: homeLoader, // le loader associé à la page d'accueil
+        element: <Home />, 
+        errorElement: <NotFound />, // si une erreur survient
+        loader: homeLoader, // 
       },
       {
         path: '/Accomodations/:id',
-        element: <Accomodation />, // la page d'hébergement
-        errorElement: <NotFound />, // le composant NotFound est utilisé si une erreur survient
-        loader: accomodationLoader, // le loader associé à la page d'hébergement
+        element: <Accomodation />, 
+        errorElement: <NotFound />, // si une erreur survient
+        loader: accomodationLoader, 
       },
       {
         path: '/About',
-        element: <About />, // la page "à propos"
-        errorElement: <NotFound />, // le composant NotFound est utilisé si une erreur survient
+        element: <About />, 
+        errorElement: <NotFound />, // si une erreur survient
       },
       {
         path: '*',
-        element: <NotFound />, // le composant NotFound est utilisé si aucune route ne correspond
+        element: <NotFound />, // si aucune route ne correspond
       },
     ]
   }
 ]);
 
-// Rendu de l'application dans l'élément avec l'ID 'root' du DOM
+// le DOM 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
