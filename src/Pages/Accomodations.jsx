@@ -2,8 +2,8 @@ import React from 'react';
 import hebergements from '../logements.json';
 import { useParams, useLoaderData } from 'react-router-dom';
 import Carousel from '../Components/Lecarousel';
-import Rating from '../Components/Rating';
-import Collapsible from '../Components/Collapsible';
+import Rating from '../Components/Score';
+import Wrap from '../Components/Wrap';
 import '../Styles/Accomodation.css';
 
 // La fonction loader renvoie les données du fichier logements.json
@@ -67,12 +67,12 @@ export default function Accomodation() {
 
                 {/* on affiche la description et les équipements de l'hébergement */}
                 <div className="infos_more">
-                    <Collapsible label="Description" className="infos_more_title">
+                    <Wrap label="Description" className="infos_more_title">
                         <p>{accomodationInfos.description}</p>
-                    </Collapsible>
-                    <Collapsible label="Equipments" className="infos_more_title">
+                    </Wrap>
+                    <Wrap label="Equipments" className="infos_more_title">
                         <p className="infos_more_equipment">{equipmentAccomodation}</p>
-                    </Collapsible>
+                    </Wrap>
                 </div>
             </div>
         </>

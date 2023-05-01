@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function StarRating({rating}) {
+export default function RatingWithStar({rating}) {
 
     // Tableau des étoiles à afficher
     const stars = [1, 2, 3, 4, 5];

@@ -1,7 +1,7 @@
 import React from 'react';
 import bannerAbout from '../assets/bannerAbout.png';
 import Banner from '../Components/Banner';
-import Collapsible from "../Components/Collapsible";
+import Collapsible from "../Components/Wrap";
 import '../Styles/Apropos.css';
 
 export default function Apropos() {

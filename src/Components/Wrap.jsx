@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import arrow_down from "../assets/arrow_down.png";
-import arrow_up from "../assets/arrow_up.png";
-import "../Styles/Collapsible.css";
+import arrowDown from "../assets/arrow_down.png";
+import arrowUp from "../assets/arrow_up.png";
+import "../Styles/Wrap.css";
 
 
-export default function Collapsible(props) {
+export default function Wrap(props) {
   // on initialise a false pour indiquer que c'est fermé
   const [isOpen, setIsOpen] = useState(false);
 
   // on ouvre 
-  const openCollapse = () => {
+  const openWrap = () => {
     setIsOpen((isOpen) => !isOpen);
   };
 
   return (
-    <div className="collapsible">
+    <div className="wraped">
       {/* "toggle" indique si le contenu est ouvert ou fermée */}
-      <div className="toggle" onClick={openCollapse}>
+      <div className="toggle" onClick={openWrap}>
         <h2>{props.label}</h2>
         {!isOpen ? (
-          <img src={arrow_down} alt="Collapse fermé" />
+          <img src={arrowDown} alt="wrap fermé" />
         ) : (
-          <img src={arrow_up} alt="Collapse ouvert" />
+          <img src={arrowUp} alt="wrap ouvert" />
         )}
       </div>
       {/* Si isOpen est "true" on affiche le contenu */}
