@@ -1,11 +1,11 @@
 import React from 'react';
-import bannerAbout from '../assets/bannerAbout.png';
+import bannerApropos from '../assets/banner_apropos.png';
 import Banner from '../Components/Banner';
-import Collapsible from "../Components/Wrap";
+import Collaps from "../Components/Wrap";
 import '../Styles/Apropos.css';
 
 export default function Apropos() {
-    // Création d'un tableau pour stocker les informations à afficher dans les "collapsibles"
+    // Création d'un tableau pour stocker les informations à afficher dans les "collaps"
     const infos = [
         {
             label: "Fiabilité",
@@ -28,15 +28,15 @@ export default function Apropos() {
     return(
         <> 
             <Banner 
-                img={bannerAbout}
+                img={bannerApropos}
             />
            
             <div className="apropos_infos">
-                {/* Utilisation d'une boucle pour générer les collapsibles à partir du tableau créer juste avant */}
+                {/* Utilisation d'une boucle pour générer les collaps à partir du tableau créer juste avant */}
                 {infos.map((info, index) => (
-                    <Collapsible key={index} label={info.label} className="apropos_infos_2">
+                    <Collaps key={index} label={info.label} className="apropos_infos_2">
                         <p>{info.content}</p>
-                    </Collapsible>
+                    </Collaps>
                 ))}
             </div>
         </>

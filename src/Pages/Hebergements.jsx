@@ -6,7 +6,7 @@ import Rating from '../Components/Score';
 import Wrap from '../Components/Wrap';
 import '../Styles/Hebergements.css';
 
-// La fonction loader renvoie les données du fichier logements.json
+// Loader renvoie les données du fichier logements.json
 export async function loader() {
     return hebergements;
 }

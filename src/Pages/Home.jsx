@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import hebergements from '../logements.json';
 import { Link } from 'react-router-dom';
 import Banner from '../Components/Banner';
-import bannerHome from '../assets/bannerHome.png';
+import bannerHome from '../assets/banner_home.png';
 import Card from '../Components/Card';
 import '../Styles/Home.css';
 
-// On récupère les données de manière asynchrone
+// On récupère les données 
 export async function loader() {
   return hebergements;
 }
