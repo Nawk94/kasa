@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import '../Styles/Layout.css'
 
-const AppLayout = () => {
+const Layout = () => {
     return (
         <div className="container">
             <Header /> 
@@ -15,4 +15,4 @@ const AppLayout = () => {
     )       
 };
 
-export default AppLayout;
+export default Layout;

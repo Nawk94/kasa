@@ -4,14 +4,14 @@ import { useParams, useLoaderData } from 'react-router-dom';
 import Carousel from '../Components/Lecarousel';
 import Rating from '../Components/Score';
 import Wrap from '../Components/Wrap';
-import '../Styles/Accomodation.css';
+import '../Styles/Hebergements.css';
 
 // La fonction loader renvoie les données du fichier logements.json
 export async function loader() {
     return hebergements;
 }
 
-export default function Accomodation() {
+export default function Logement() {
     const accomodations = useLoaderData();
 
     // on extrait les paramètres de l'URL
@@ -50,7 +50,7 @@ export default function Accomodation() {
                     </div>
 
                     {/* Les informations sur l'hôte */}
-                    <div className="infos_bloc_two">
+                    <div className="infos_2nd">
                         <div className="host">
                             <span className="name">{accomodationInfos.host.name}</span>
                             <div className="pic">
@@ -66,12 +66,12 @@ export default function Accomodation() {
                 </div>
 
                 {/* on affiche la description et les équipements de l'hébergement */}
-                <div className="infos_more">
-                    <Wrap label="Description" className="infos_more_title">
+                <div className="infos_3rd">
+                    <Wrap label="Description" className="infos_3rd_title">
                         <p>{accomodationInfos.description}</p>
                     </Wrap>
-                    <Wrap label="Equipments" className="infos_more_title">
-                        <p className="infos_more_equipment">{equipmentAccomodation}</p>
+                    <Wrap label="Equipments" className="infos_3rd_title">
+                        <p className="infos_3rd_equipment">{equipmentAccomodation}</p>
                     </Wrap>
                 </div>
             </div>
