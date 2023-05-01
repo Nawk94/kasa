@@ -1,0 +1,38 @@
+.about_infos {
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+.about_infos_label h2 {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height : 34px;
+}
+.about_infos_label p {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height : 34px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .about_infos {
+        width: 100%;
+        margin: 20px auto 20px auto;
+    }
+    
+    .about_infos_label h2 {
+        padding: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height : 18px;
+    }
+    .about_infos_label p {
+        padding: 8px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height : 17px;
+    } 
+}

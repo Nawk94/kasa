@@ -1,0 +1,201 @@
+/**************************** MAIN ACCOMODATIONS ***************************/
+
+/************** INFOS **************/
+
+.infos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.infos h1 {
+    width:100%;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    color: var(--corail);
+}
+
+/** Bloc One - Title, Location **/
+
+.infos_bloc_one {
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--corail);
+}
+
+.infos_bloc_one ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--white);
+}
+
+.infos_bloc_one ul li {
+    height: 25px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: var(--corail);
+    line-height: 25px;
+}
+
+/** Bloc Two - Host, rating **/
+
+.infos_bloc_two {
+    display: flex;
+    flex-direction: column;
+    color: var(--corail);
+}
+
+/* ------ host ------*/
+.host {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.host span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: right;
+    width: min-content;
+}
+
+.avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 8px;
+}
+.avatar img {
+    width: 64px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ------ Rating ------*/
+.rating  {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 32px;
+}
+
+/************ INFOS MORE ************/
+
+.infos_more {
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    margin :20px 0px 40px 0px;
+}
+
+/**** Description & Equipment****/
+
+.infos_more h2 {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height : 26px;
+}
+.infos_more p {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height : 26px;
+}
+.infos_more_equipment p {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height : 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .infos {
+        margin-top: 10px;
+    }
+    .infos h1 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .location {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .infos_bloc_one ul {
+        gap: 10px;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .infos_bloc_one ul li {
+        height: 20px;
+        border-radius: 10px;
+        padding: 0px 12px;
+        line-height: 18px;
+    } 
+
+    .infos_bloc_two {
+        width: 100%;
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: space-between;
+        color: var(--corail);
+    }
+    .host span {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .avatar {
+        width: 32px;
+        height: 32px;
+    }
+    .avatar img {
+        width: 32px;
+
+    }
+    .rating  {
+        margin-top: 20px;
+        text-align: right;
+        font-size: 18px;
+        letter-spacing : 6px;
+    
+    }
+
+    .infos_more {
+        flex-direction: column;
+        gap: 5%;
+        margin :0px 0px 20px 0px;
+    }
+    .infos_more h2 {
+        padding: 10px;
+        font-size: 13px;
+        line-height : 18px;
+    }
+    .infos_more p {
+        padding: 10px;
+        font-size: 12px;
+        line-height : 17px;
+    }
+    .infos_more_equipment p {
+        padding: 10px;
+        font-size: 12px;
+        line-height : 0px;
+    }
+}
