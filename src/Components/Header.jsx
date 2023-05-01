@@ -1,5 +1,5 @@
 import * as React from 'react';
-import logo from '../assets/logo_kasa.png';
+import LogoHeader from '../assets/logo_header.png';
 import { NavLink } from 'react-router-dom';
 import '../Styles/Header.css';
 
@@ -8,7 +8,7 @@ export default function Header() {
         <div className="header">
             <div className="logo">
                 {/* on affiche le logo */}
-                <img src={ logo } alt="logo Kasa" />
+                <img src={LogoHeader} alt="logo Kasa" />
             </div>
             <nav>
                 {/* <NavLink> lie les différentes pages  */}
