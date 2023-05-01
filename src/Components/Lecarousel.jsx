@@ -48,11 +48,11 @@ export default function Carousel({ images }) {
         style={{ backgroundImage: `url(${images[currImg]})` }}
       >
         <div className="left" onClick={handleLeftArrowClick}>
-          <img src={arrowLeft} alt="Suivante" />
+          <img src={arrowLeft} alt="Suivant" />
         </div>
 
         <div className="right" onClick={handleRightArrowClick}>
-          <img src={arrowRight} alt="Précédente" />
+          <img src={arrowRight} alt="Précédent" />
         </div>
       </div>
     </div>
