@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../Styles/Lecarousel.css";
-import arrow_left from "../assets/arrow_left.png";
-import arrow_right from "../assets/arrow_right.png";
+import arrowLeft from "../assets/arrow_left.png";
+import arrowRight from "../assets/arrow_right.png";
 
 export default function Carousel({ images }) {
   // On Utilise le hook useState pour stocker l'index de l'image actuelle
@@ -20,11 +20,11 @@ export default function Carousel({ images }) {
   }
 
   const handleLeftArrowClick = () => {
-    // Si l'image est la première,  on réinitialise à la dernière image
+    // Si l'image est la première on réinitialise à la dernière
     if (currImg === 0) {
       setCurrImg(images.length - 1);
     } else {
-      // Sinon, on enleve 1 à l'index de l'image 
+      // Sinon on enleve 1 à l'index de l'image 
       setCurrImg(currImg - 1);
     }
   };
@@ -32,11 +32,11 @@ export default function Carousel({ images }) {
 
 
   const handleRightArrowClick = () => {
-    // Si l'image est la dernière, on réinitialise à la première image
+    // Si l'image est la dernière on réinitialise à la première
     if (currImg === images.length - 1) {
       setCurrImg(0);
     } else {
-      // Sinon, on ajoute 1 à l'index de l'image 
+      // Sinon on ajoute 1 à l'index de l'image 
       setCurrImg(currImg + 1);
     }
   };
@@ -48,11 +48,11 @@ export default function Carousel({ images }) {
         style={{ backgroundImage: `url(${images[currImg]})` }}
       >
         <div className="left" onClick={handleLeftArrowClick}>
-          <img src={arrow_left} alt="Suivante" />
+          <img src={arrowLeft} alt="Suivante" />
         </div>
 
         <div className="right" onClick={handleRightArrowClick}>
-          <img src={arrow_right} alt="Précédente" />
+          <img src={arrowRight} alt="Précédente" />
         </div>
       </div>
     </div>
