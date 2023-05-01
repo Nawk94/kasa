@@ -42,7 +42,7 @@ export default function Accomodation() {
                 <div className="infos">
                     <h1>{accomodationInfos.title}</h1>
 
-                    <div className="infos_bloc_one">
+                    <div className="infos_first">
                         <div className="location">{accomodationInfos.location}</div>
 
                         {/* on affiche les tags de l'hébergement */}
@@ -53,7 +53,7 @@ export default function Accomodation() {
                     <div className="infos_bloc_two">
                         <div className="host">
                             <span className="name">{accomodationInfos.host.name}</span>
-                            <div className="avatar">
+                            <div className="pic">
                                 <img src={accomodationInfos.host.picture} alt="hôte" />
                             </div>
                         </div>

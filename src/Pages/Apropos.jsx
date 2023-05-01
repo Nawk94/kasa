@@ -2,9 +2,9 @@ import React from 'react';
 import bannerAbout from '../assets/bannerAbout.png';
 import Banner from '../Components/Banner';
 import Collapsible from "../Components/Collapsible";
-import '../Styles/About.css';
+import '../Styles/Apropos.css';
 
-export default function About() {
+export default function Apropos() {
     // Création d'un tableau pour stocker les informations à afficher dans les "collapsibles"
     const infos = [
         {
@@ -31,10 +31,10 @@ export default function About() {
                 img={bannerAbout}
             />
            
-            <div className="about_infos">
+            <div className="apropos_infos">
                 {/* Utilisation d'une boucle pour générer les collapsibles à partir du tableau créer juste avant */}
                 {infos.map((info, index) => (
-                    <Collapsible key={index} label={info.label} className="about_infos_label">
+                    <Collapsible key={index} label={info.label} className="apropos_infos_2">
                         <p>{info.content}</p>
                     </Collapsible>
                 ))}
