@@ -1,5 +1,5 @@
 import React from 'react';
-import accomodations from '../logements.json';
+import hebergements from '../logements.json';
 import { useParams, useLoaderData } from 'react-router-dom';
 import Carousel from '../Components/Lecarousel';
 import Rating from '../Components/Rating';
@@ -8,7 +8,7 @@ import '../Styles/Accomodation.css';
 
 // La fonction loader renvoie les données du fichier logements.json
 export async function loader() {
-    return accomodations;
+    return hebergements;
 }
 
 export default function Accomodation() {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import accomodations from '../logements.json';
+import hebergements from '../logements.json';
 import { Link } from 'react-router-dom';
 import Banner from '../Components/Banner';
 import bannerHome from '../assets/bannerHome.png';
@@ -8,7 +8,7 @@ import '../Styles/Home.css';
 
 // On récupère les données de manière asynchrone
 export async function loader() {
-  return accomodations;
+  return hebergements;
 }
 
 const Home = () => {
