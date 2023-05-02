@@ -13,13 +13,13 @@ export async function loader() {
 
 const Home = () => {
   // On utilise useState pour gérer l'état des hébergements
-  const [accomodationsData, setAccomodationsData] = useState([]);
+  const [accommodationsData, setAccommodationsData] = useState([]);
 
   // On utilise useEffect pour récupérer les données des hébergements au chargement de la page
   useEffect(() => {
     async function fetchData() {
       const data = await loader();
-      setAccomodationsData(data);
+      setAccommodationsData(data);
     }
     fetchData();
   }, []);
@@ -32,11 +32,11 @@ const Home = () => {
       </div>
 
       {/* Si on a des hébergements, on les affiche */}
-      {accomodationsData.length > 0 ? (
-        <div className="accomodations">
-          {accomodationsData.map((accomodation) => (
-            <Link key={`link${accomodation.id}`} to={`/Accomodations/${accomodation.id}`}>
-              <Card key={`card${accomodation.id}`} img={accomodation.cover} title={accomodation.title} />
+      {accommodationsData.length > 0 ? (
+        <div className="accommodations">
+          {accommodationsData.map((accommodation) => (
+            <Link key={`link${accommodation.id}`} to={`/Accommodations/${accommodation.id}`}>
+              <Card key={`card${accommodation.id}`} img={accommodation.cover} title={accommodation.title} />
             </Link>
           ))}
         </div>

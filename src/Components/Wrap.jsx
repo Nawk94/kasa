@@ -6,26 +6,26 @@ import "../Styles/Wrap.css";
 
 export default function Wrap(props) {
   // on initialise a false pour indiquer que c'est fermé
-  const [isOpen, setIsOpen] = useState(false);
+  const [Open, setOpen] = useState(false);
 
   // on ouvre 
   const openWrap = () => {
-    setIsOpen((isOpen) => !isOpen);
+    setOpen((Open) => !Open);
   };
 
   return (
     <div className="wraped">
-      {/* "toggle" indique si le contenu est ouvert ou fermée */}
-      <div className="toggle" onClick={openWrap}>
+      {/* "show" indique si le contenu est ouvert ou fermée */}
+      <div className="show" onClick={openWrap}>
         <h2>{props.label}</h2>
-        {!isOpen ? (
-          <img src={arrowDown} alt="wrap fermé" />
+        {!Open ? (
+          <img src={arrowDown} alt="Encadré fermé" />
         ) : (
-          <img src={arrowUp} alt="wrap ouvert" />
+          <img src={arrowUp} alt="Encadré ouvert" />
         )}
       </div>
-      {/* Si isOpen est "true" on affiche le contenu */}
-      {isOpen && <div className="text_content">{props.children}</div>}
+      {/* Si Open est "true" on affiche le contenu */}
+      {Open && <div className="text_content">{props.children}</div>}
     </div>
   );
 }

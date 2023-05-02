@@ -12,55 +12,55 @@ export async function loader() {
 }
 
 export default function Logement() {
-    const accomodations = useLoaderData();
+    const accommodations = useLoaderData();
 
     // on extrait les paramètres de l'URL
     const params = useParams();
 
     // on trouve l'hébergement correspondant à l'ID dans les paramètres 
-    const accomodationInfos = accomodations.find(accomodation =>
-        accomodation.id === params.id
+    const accommodationInfos = accommodations.find(accommodation =>
+        accommodation.id === params.id
     );
 
     // on affiche les tags de l'hébergement
-    const tagsAccomodation = accomodationInfos.tags.map((tag, index) => {
+    const tagsAccommodation = accommodationInfos.tags.map((tag, index) => {
         return <li key={index}>{tag}</li>;
     });
 
     // on affiche les équipements de l'hébergement
-    const equipmentAccomodation = accomodationInfos.equipments.map((equipment, index) => {
+    const equipmentAccommodation = accommodationInfos.equipments.map((equipment, index) => {
         return <p key={index}>{equipment}</p>;
     });
 
     return (
         <>
-            <div className="accomodation" key={accomodationInfos.id}>
+            <div className="accommodation" key={accommodationInfos.id}>
                 {/* on affiche les images de l'hébergement */}
-                <Carousel images={accomodationInfos.pictures} />
+                <Carousel images={accommodationInfos.pictures} />
 
                 {/* Les informations sur l'hébergement */}
                 <div className="infos">
-                    <h1>{accomodationInfos.title}</h1>
+                    <h1>{accommodationInfos.title}</h1>
 
                     <div className="infos_first">
-                        <div className="location">{accomodationInfos.location}</div>
+                        <div className="location">{accommodationInfos.location}</div>
 
                         {/* on affiche les tags de l'hébergement */}
-                        <ul>{tagsAccomodation}</ul>
+                        <ul>{tagsAccommodation}</ul>
                     </div>
 
                     {/* Les informations sur l'hôte */}
                     <div className="infos_2nd">
                         <div className="host">
-                            <span className="name">{accomodationInfos.host.name}</span>
+                            <span className="name">{accommodationInfos.host.name}</span>
                             <div className="pic">
-                                <img src={accomodationInfos.host.picture} alt="hôte" />
+                                <img src={accommodationInfos.host.picture} alt="hôte" />
                             </div>
                         </div>
 
                         {/* on affiche la note de l'hébergement */}
                         <div className="rating">
-                            <Rating rating={accomodationInfos.rating} />
+                            <Rating rating={accommodationInfos.rating} />
                         </div>
                     </div>
                 </div>
@@ -68,10 +68,10 @@ export default function Logement() {
                 {/* on affiche la description et les équipements de l'hébergement */}
                 <div className="infos_3rd">
                     <Wrap label="Description" className="infos_3rd_title">
-                        <p>{accomodationInfos.description}</p>
+                        <p>{accommodationInfos.description}</p>
                     </Wrap>
                     <Wrap label="Equipments" className="infos_3rd_title">
-                        <p className="infos_3rd_equipment">{equipmentAccomodation}</p>
+                        <p className="infos_3rd_equipment">{equipmentAccommodation}</p>
                     </Wrap>
                 </div>
             </div>

@@ -5,8 +5,8 @@ import {
   RouterProvider, 
 } from 'react-router-dom';
 import Layout from './Layout/Layout'; 
-import Home, { loader as homeLoader } from './Pages/Home'; 
-import Accomodation, { loader as accomodationLoader } from './Pages/Hebergements'; 
+import Home, { loader as HomeLoader } from './Pages/Home'; 
+import Accommodation, { loader as AccommodationLoader } from './Pages/Hebergements'; 
 import About from './Pages/Apropos'; 
 import CantFind from './Components/CantFind'; 
 
@@ -21,13 +21,13 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />, 
         errorElement: <CantFind />, // si une erreur survient
-        loader: homeLoader, 
+        loader: HomeLoader, 
       },
       {
-        path: '/Accomodations/:id',
-        element: <Accomodation />, 
+        path: '/Accommodations/:id',
+        element: <Accommodation />, 
         errorElement: < CantFind />, // si une erreur survient
-        loader: accomodationLoader, 
+        loader: AccommodationLoader, 
       },
       {
         path: '/About',

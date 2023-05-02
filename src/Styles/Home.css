@@ -12,7 +12,7 @@
     z-index:2;
 }
 
-.accomodations {
+.accommodations {
     width: 100%;
     height: 100%;
     margin-top: 50px;
@@ -34,7 +34,7 @@
         z-index:2;
     }    
 }
-.accomodations {
+.accommodations {
     height: 100%;
     margin-top: -20px;
     background-color: var(--white);

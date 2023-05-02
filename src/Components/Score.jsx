@@ -17,8 +17,8 @@ export default function RatingWithStar({rating}) {
 
     return (
         <div>
-            {/* Pour chaque étoile, on vérifie si la note est supérieure ou égale
-            à l'indice de l'étoile. Si oui, on affiche une étoile pleine, sinon
+            {/* Pour chaque étoile, on vérifie si la note est > ou =
+            à l'indice, si oui on affiche une étoile pleine sinon
             on affiche une étoile vide. */}
             {stars.map((star) =>
                 rating >= star ? (

@@ -8,7 +8,7 @@ export default function Header() {
         <div className="header">
             <div className="logo">
                 {/* on affiche le logo */}
-                <img src={LogoHeader} alt="logo Kasa" />
+                <img src={LogoHeader} alt="Kasa, agence de loccation entre particulier" />
             </div>
             <nav>
                 {/* <NavLink> lie les différentes pages  */}
