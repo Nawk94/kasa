@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Banner.css';
+import '../styles/Banner.css';
 
 // La source de l'image passe par la props 
 export default function Banner(props) {

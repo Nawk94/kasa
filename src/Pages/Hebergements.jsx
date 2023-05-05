@@ -1,10 +1,10 @@
 import React from 'react';
 import hebergements from '../logements.json';
 import { useParams, useLoaderData } from 'react-router-dom';
-import Carousel from '../Components/Lecarousel';
-import Rating from '../Components/Score';
-import Wrap from '../Components/Wrap';
-import '../Styles/Hebergements.css';
+import Carousel from '../components/Carousel';
+import Rating from '../components/Score';
+import Wrap from '../components/Wrap';
+import '../styles/Hebergements.css';
 
 // Loader renvoie les données du fichier logements.json
 export async function loader() {
@@ -50,11 +50,11 @@ export default function Logement() {
                     </div>
 
                     {/* Les informations sur l'hôte */}
-                    <div className="infos_2nd">
+                    <div className="infos_second">
                         <div className="host">
                             <span className="name">{accommodationInfos.host.name}</span>
                             <div className="pic">
-                                <img src={accommodationInfos.host.picture} alt="hôte" />
+                                <img src={accommodationInfos.host.picture} alt="le loueur" />
                             </div>
                         </div>
 
@@ -66,12 +66,12 @@ export default function Logement() {
                 </div>
 
                 {/* on affiche la description et les équipements de l'hébergement */}
-                <div className="infos_3rd">
-                    <Wrap label="Description" className="infos_3rd_title">
+                <div className="infos_third">
+                    <Wrap label="Description" className="infos_third_title">
                         <p>{accommodationInfos.description}</p>
                     </Wrap>
-                    <Wrap label="Equipments" className="infos_3rd_title">
-                        <p className="infos_3rd_equipment">{equipmentAccommodation}</p>
+                    <Wrap label="Equipements" className="infos_third_title">
+                        <p className="infos_third_equipment">{equipmentAccommodation}</p>
                     </Wrap>
                 </div>
             </div>

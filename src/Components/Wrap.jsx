@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import arrowDown from "../assets/arrow_down.png";
 import arrowUp from "../assets/arrow_up.png";
-import "../Styles/Wrap.css";
+import "../styles/Wrap.css";
 
 
 export default function Wrap(props) {

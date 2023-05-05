@@ -4,11 +4,11 @@ import {
   createBrowserRouter, 
   RouterProvider, 
 } from 'react-router-dom';
-import Layout from './Layout/Layout'; 
-import Home, { loader as HomeLoader } from './Pages/Home'; 
-import Accommodation, { loader as AccommodationLoader } from './Pages/Hebergements'; 
-import About from './Pages/Apropos'; 
-import CantFind from './Components/CantFind'; 
+import Layout from './Layout'; 
+import Home, { loader as HomeLoader } from './pages/Home'; 
+import Accommodation, { loader as AccommodationLoader } from './pages/Hebergements'; 
+import About from './pages/About'; 
+import CantFind from './components/CantFind'; 
 
 // Création des routes en arborescence 
 const router = createBrowserRouter([

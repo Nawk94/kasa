@@ -50,7 +50,7 @@
 
 
 
-.infos_2nd {
+.infos_second {
     display: flex;
     flex-direction: column;
     color: var(--corail);
@@ -92,7 +92,7 @@
 
 
 
-.infos_3rd {
+.infos_third {
     width: 100%;
     display: flex;
     gap: 5%;
@@ -101,19 +101,19 @@
 
 
 
-.infos_3rd h2 {
+.infos_third h2 {
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
     line-height : 26px;
 }
-.infos_3rd p {
+.infos_third p {
     padding: 10px;
     font-size: 18px;
     font-weight: 400;
     line-height : 26px;
 }
-.infos_3rd_equipment p {
+.infos_third_equipment p {
     padding: 10px;
     font-size: 18px;
     font-weight: 400;
@@ -146,7 +146,7 @@
         line-height: 18px;
     } 
 
-    .infos_2nd {
+    .infos_second {
         width: 100%;
         display: flex;
         flex-direction:row-reverse;
@@ -173,22 +173,22 @@
     
     }
 
-    .infos_3rd {
+    .infos_third {
         flex-direction: column;
         gap: 5%;
         margin :0px 0px 20px 0px;
     }
-    .infos_3rd h2 {
+    .infos_third h2 {
         padding: 10px;
         font-size: 13px;
         line-height : 18px;
     }
-    .infos_3rd p {
+    .infos_third p {
         padding: 10px;
         font-size: 12px;
         line-height : 17px;
     }
-    .infos_3rd_equipment p {
+    .infos_third_equipment p {
         padding: 10px;
         font-size: 12px;
         line-height : 0px;

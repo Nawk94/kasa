@@ -3,7 +3,7 @@
     height: 415px;
 }
 
-.carousel2 {
+.carouseltwo {
     width: 100%;
     height: 100%;
     border-radius: 25px;
@@ -14,7 +14,7 @@
     justify-content: space-between;
 }
 
-.carousel2 .left {
+.carouseltwo .left {
     width: 5%;
     height: 100%;
     padding-left:10px;
@@ -23,7 +23,7 @@
     place-items: center;
 }
 
-.carousel2 .right {
+.carouseltwo .right {
     width: 5%;
     height: 100%;
     padding-right: 45px;
@@ -38,13 +38,13 @@
         width: 100%;
         height: 255px;
     }
-    .carousel2 {
+    .carouseltwo {
         border-radius: 10px;
     }
-    .carousel2 .left img {
+    .carouseltwo .left img {
        transform: scale(0.30, 0.30);
     }
-    .carousel2 .right img {
+    .carouseltwo .right img {
         transform: scale(0.30, 0.30);
      }
 }

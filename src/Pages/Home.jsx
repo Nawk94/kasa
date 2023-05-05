@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import hebergements from '../logements.json';
 import { Link } from 'react-router-dom';
-import Banner from '../Components/Banner';
+import Banner from '../components/Banner';
 import bannerHome from '../assets/banner_home.png';
-import Card from '../Components/Card';
-import '../Styles/Home.css';
+import Card from '../components/Card';
+import '../styles/Home.css';
 
 // On récupère les données 
 export async function loader() {

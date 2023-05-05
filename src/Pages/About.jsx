@@ -1,8 +1,8 @@
 import React from 'react';
 import bannerApropos from '../assets/banner_apropos.png';
-import Banner from '../Components/Banner';
-import Collaps from "../Components/Wrap";
-import '../Styles/Apropos.css';
+import Banner from '../components/Banner';
+import Collaps from "../components/Wrap";
+import '../styles/About.css';
 
 export default function Apropos() {
     // Création d'un tableau pour stocker les informations à afficher dans les "collaps"
@@ -34,7 +34,7 @@ export default function Apropos() {
             <div className="apropos_infos">
                 {/* Utilisation d'une boucle pour générer les collaps à partir du tableau créer juste avant */}
                 {infos.map((info, index) => (
-                    <Collaps key={index} label={info.label} className="apropos_infos_2">
+                    <Collaps key={index} label={info.label} className="apropos_infos_two">
                         <p>{info.content}</p>
                     </Collaps>
                 ))}

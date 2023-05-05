@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Card.css';
+import '../styles/Card.css';
 
 export default function Card(props) {
   const { img, title } = props; // Destructuration des props pour éviter la répétition

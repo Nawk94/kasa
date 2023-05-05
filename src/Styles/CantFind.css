@@ -13,7 +13,7 @@
     font-weight: 700;
 }
 
-.errorstxt{
+.errortxt{
     font-size: 36px;
     line-height: 51px;
     font-weight: 500;
@@ -45,7 +45,7 @@
         line-height: 134px;
     }
     
-    .errorstxt {
+    .errortxt {
         font-size: 18px;
         line-height: 26px;
     }
