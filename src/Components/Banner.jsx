@@ -6,7 +6,7 @@ export default function Banner(props) {
     return (
         <>
             <div className="banner">
-                <img src={props.img} alt="bannière paysage" />
+                <img src={props.img} alt="bannière représentant un paysage" />
             </div>
         </>
     )
