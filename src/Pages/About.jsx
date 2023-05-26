@@ -1,7 +1,7 @@
 import React from 'react';
 import bannerApropos from '../assets/banner_apropos.png';
-import Banner from '../components/Banner';
-import Collaps from "../components/Wrap";
+import Banner from '../Components/Banner';
+import Collaps from "../Components/Wrap";
 import '../styles/About.css';
 
 export default function Apropos() {

@@ -8,7 +8,7 @@ import Layout from './Layout';
 import Home, { loader as HomeLoader } from './pages/Home'; 
 import Accommodation, { loader as AccommodationLoader } from './pages/Hebergements'; 
 import About from './pages/About'; 
-import CantFind from './components/CantFind'; 
+import CantFind from './Components/CantFind'; 
 
 // Création des routes en arborescence 
 const router = createBrowserRouter([

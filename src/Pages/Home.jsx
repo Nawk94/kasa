@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import hebergements from '../logements.json';
 import { Link } from 'react-router-dom';
-import Banner from '../components/Banner';
+import Banner from '../Components/Banner';
 import bannerHome from '../assets/banner_home.png';
-import Card from '../components/Card';
+import Card from '../Components/Card';
 import '../styles/Home.css';
 
 // On récupère les données 

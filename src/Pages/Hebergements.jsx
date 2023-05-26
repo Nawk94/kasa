@@ -1,9 +1,9 @@
 import React from 'react';
 import hebergements from '../logements.json';
 import { useParams, useLoaderData } from 'react-router-dom';
-import Carousel from '../components/Carousel';
-import Rating from '../components/Score';
-import Wrap from '../components/Wrap';
+import Carousel from '../Components/Carousel';
+import Rating from '../Components/Score';
+import Wrap from '../Components/Wrap';
 import '../styles/Hebergements.css';
 
 // loader renvoie les données du fichier logements.json
