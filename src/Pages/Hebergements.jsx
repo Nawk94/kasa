@@ -4,7 +4,9 @@ import { useParams, useLoaderData } from 'react-router-dom';
 import Carousel from '../Components/Carousel';
 import Rating from '../Components/Score';
 import Wrap from '../Components/Wrap';
+import Trip from '../Components/CantFind';
 import '../styles/Hebergements.css';
+
 
 // loader renvoie les données du fichier logements.json
 export async function loader() {
@@ -17,10 +19,14 @@ export default function Logement() {
     // on extrait les paramètres de l'URL
     const params = useParams();
 
-    // on trouve l'hébergement correspondant à l'ID dans les paramètres 
+    //on trouve l'hébergement correspondant à l'ID dans les paramètres 
     const accommodationInfos = accommodations.find(accommodation =>
         accommodation.id === params.id
     );
+
+    if (!accommodationInfos) {
+        return <Trip />;
+      }
 
     // on affiche les tags de l'hébergement
     const tagsAccommodation = accommodationInfos.tags.map((tag, index) => {

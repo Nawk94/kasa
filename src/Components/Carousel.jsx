@@ -42,19 +42,21 @@ export default function Carousel({ images }) {
   };
 
   return (
+    
     <div className="carousel">
       <div
-        className="carouseltwo"
-        style={{ backgroundImage: `url(${images[CurrentImg]})` }}
-      >
-        <div className="left" onClick={handleLeftArrowClick}>
-          <img src={arrowLeft} alt="Précédente" />
-        </div>
+          className="carouseltwo"
+          style={{ backgroundImage: `url(${images[CurrentImg]})` }}
+        >
+          <div className="left" onClick={handleLeftArrowClick}>
+            <img src={arrowLeft} alt="Précédente" />
+          </div>
 
-        <div className="right" onClick={handleRightArrowClick}>
-          <img src={arrowRight} alt="Suivante" />
+          <div className="right" onClick={handleRightArrowClick}>
+            <img src={arrowRight} alt="Suivante" />
+          </div>
         </div>
-      </div>
+        <div className="count">{CurrentImg + 1} / {images.length}</div>
     </div>
   );
 }
