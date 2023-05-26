@@ -8,7 +8,7 @@ export default function Error() {
             <div className="number">
                 404
             </div>
-            <div className="errortxt">La page que vous demandez n'existe pas.</div>
+            <div className="errortxt">Oups ! la page que vous demandez n'existe pas.</div>
             <div className="hsh">
                 {/* Link redirige vers la page d'accueil */}
                 <Link to="/">Retourner sur la page d’accueil</Link>

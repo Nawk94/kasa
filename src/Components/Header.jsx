@@ -11,7 +11,7 @@ export default function Header() {
                 <img src={LogoHeader} alt="Kasa, agence de location entre particulier" />
             </div>
             <nav>
-                {/* <NavLink> lie les différentes pages  */}
+                {/* lie les différentes pages  */}
                 <NavLink to="/" className={({isActive}) =>
                     isActive ? "activeLink": ""}>Accueil</NavLink>
                 <NavLink to="/About" className={({isActive}) =>

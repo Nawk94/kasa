@@ -19,7 +19,7 @@ export default function RatingWithStar({rating}) {
         <div>
             {/* Pour chaque étoile, on vérifie si la note est > ou =
             à l'indice, si oui on affiche une étoile pleine sinon
-            on affiche une étoile vide. */}
+            on affiche une étoile vide. On utilise toString() pour convertir en chaine de caractere pour avoir des key uniques */}
             {stars.map((star) =>
                 rating >= star ? (
                     <span key={star.toString()} style={redStyle}>&#9733;</span>

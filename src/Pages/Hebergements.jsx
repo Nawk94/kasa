@@ -6,7 +6,7 @@ import Rating from '../components/Score';
 import Wrap from '../components/Wrap';
 import '../styles/Hebergements.css';
 
-// Loader renvoie les données du fichier logements.json
+// loader renvoie les données du fichier logements.json
 export async function loader() {
     return hebergements;
 }
@@ -38,7 +38,7 @@ export default function Logement() {
                 {/* on affiche les images de l'hébergement */}
                 <Carousel images={accommodationInfos.pictures} />
 
-                {/* Les informations sur l'hébergement */}
+                {/* Le nom de l'annonce */}
                 <div className="infos">
                     <h1>{accommodationInfos.title}</h1>
 
@@ -70,7 +70,7 @@ export default function Logement() {
                     <Wrap label="Description" className="infos_third_title">
                         <p>{accommodationInfos.description}</p>
                     </Wrap>
-                    <Wrap label="Equipements" className="infos_third_title">
+                    <Wrap label="Équipements" className="infos_third_title">
                         <p className="infos_third_equipment">{equipmentAccommodation}</p>
                     </Wrap>
                 </div>

@@ -8,14 +8,14 @@ export default function Wrap(props) {
   // on initialise a false pour indiquer que c'est fermé
   const [Open, setOpen] = useState(false);
 
-  // on ouvre 
+  // on appel la fonction au clic pour changer l'état 
   const openWrap = () => {
     setOpen((Open) => !Open);
   };
 
   return (
     <div className="wraped">
-      {/* "show" indique si le contenu est ouvert ou fermée */}
+      {/* "show" indique si le contenu est ouvert ou fermée et on affiche la fleche correspondante à chaque situation */}
       <div className="show" onClick={openWrap}>
         <h2>{props.label}</h2>
         {!Open ? (
