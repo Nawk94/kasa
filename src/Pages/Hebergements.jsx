@@ -19,11 +19,12 @@ export default function Logement() {
     // on extrait les paramètres de l'URL
     const params = useParams();
 
-    //on trouve l'hébergement correspondant à l'ID dans les paramètres 
+    // on trouve l'hébergement correspondant à l'ID dans les paramètres 
     const accommodationInfos = accommodations.find(accommodation =>
         accommodation.id === params.id
     );
 
+    // on vérifie si c'est définie 
     if (!accommodationInfos) {
         return <Trip />;
       }
